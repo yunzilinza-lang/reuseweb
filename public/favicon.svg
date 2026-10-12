@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="reuse-sprout-fav" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1E5C63" />
+      <stop offset="45%" stop-color="#2D8C77" />
+      <stop offset="80%" stop-color="#55C189" />
+      <stop offset="100%" stop-color="#84E0A0" />
+    </linearGradient>
+    <linearGradient id="reuse-leaf-highlight" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4CB87F" />
+      <stop offset="100%" stop-color="#A4ECB7" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background circular tile -->
+  <rect width="64" height="64" rx="16" fill="#FAF9F5"/>
+
+  <g transform="translate(4, 2)">
+    <!-- 'U' Stem Base -->
+    <path 
+      d="M14 18 V34 C14 41 19 46 27 46 C35 46 40 41 40 34 V28" 
+      stroke="#222E35" 
+      stroke-width="7.5" 
+      stroke-linecap="round" 
+      stroke-linejoin="round"
+    />
+    
+    <!-- Sprouting upward curve connecting right arm of U to Leaf -->
+    <path 
+      d="M40 32 C40 23 44 19 50 18 C52 17.7 54 18 55 18.5" 
+      stroke="url(#reuse-sprout-fav)" 
+      stroke-width="5" 
+      stroke-linecap="round"
+    />
+
+    <!-- Leaf shape -->
+    <path 
+      d="M45 19 C47 11 57 8 59 8 C59 13 54 21 45 19 Z" 
+      fill="url(#reuse-leaf-highlight)"
+    />
+    <!-- Leaf vein -->
+    <path 
+      d="M46 18.5 C51 15 56 11 58.5 8.5" 
+      stroke="#1E5C63" 
+      stroke-width="0.8" 
+      stroke-linecap="round"
+      opacity="0.4"
+    />
+  </g>
+</svg>
